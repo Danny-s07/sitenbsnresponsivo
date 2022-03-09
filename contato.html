@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>NBSN - Nerd Books Science News</title>
+    <meta name="Keywords" content="espaço, nasa, livros, booktobers, literatura nacional, astronautas, compra, sites, astronautica,Nerd, Books">
+    <meta name="Description" content="O Site NBSN - Nerd Books Science News , um Site de noticias sobre astronomia,astronautica e literatura">
+</head>
+<body>
+    <div id="principal">
+        <header id="topo">
+            <div id="logo">
+                <a href="index.html"><img class="logotipo"  src="imagens/newlogonewokredonda.png" alt="logo "></a>
+              
+            </div>
+            <nav id="menu">
+                <ul id="listamenu">
+                    <li><a href="index.html" class="linkmenu">Home</a></li>
+                    <li><a href="livros.html" class="linkmenu">Livros</a></li>
+                    <li><a href="ciencia.html" class="linkmenu">Ciência</a></li>
+                    <li><a href="contato.html" class="linkmenu">Contato</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <select id="menumobile" name="menumobile" class="campoform" onChange="if(this.selectedIndex!=0)self.location=this.options[this.selectedIndex].value">
+                    <option>Navegação</option>
+                    <option value="index.html">Home</option>
+                    <option value="livros.html">Livros</option>
+                    <option value="ciencia.html">Ciência</option>
+                    <option value="contato.html">Contato</option>                        
+                </select>
+            </nav>
+        </header>
+
+        
+            <section id="conteudo">
+                <h1 class="titulo"> Nossos Contatos</h1>
+            
+                <div id="contato"><!-- inicio div form-->
+    
+                    <h2>Fale Conosco</h2>
+    
+                    <form  id="formcontato" action="" method="post">
+                        
+                        <fieldset> <!-- gruopbox-->
+    
+                            <legend>Dados Pessoais:</legend>
+                            <label  class="rotulocomum" for="nome">Nome:</label>
+                            <input class="campoform" type="text" name="nome" required placeholder="Digite seu nome">
+                            <br>
+    
+                            <label  class="rotulocomum" for="email">E-mail:</label>
+                            <input  class="campoform"  type="email" name="email" required placeholder="Digite um email valido">
+    
+                            <br>
+    
+                            <label>Sexo/Género:</label>
+                            <br>
+                            <br>
+                            <label class="bt">
+                            <input  type="radio" name="sexo" value="Feminino" checked>Feminino
+                            </label>
+                            <br>
+                            <label class="bt" >
+                            <input type="radio" name="sexo" value="Masculino">Masculino
+                            </label>
+                            <br>
+                            <label class="bt" >
+                            <input  type="radio" name="sexo" value="Outros">LGBTQIA+
+                             </label>
+                            <br>
+                             
+                            <label>Assuntos de Interesse</label>
+                            <br>
+                            <br>
+                             <label class="bt">
+                            <input  type="checkbox" name="Interesse" value="leituranacional">Leitura Nacional
+                             </label>
+                            <br>
+                             <label class="bt">
+                            <input  type="checkbox" name="Interesse" value="leiturainternacional">Leitura Internacional
+                             </label>
+                            <br>
+                             <label class="bt">
+                            <input  type="checkbox" name="Interesse" value="bd">Astronômia(estrelas,planetas)
+                            </label>
+                            <br>
+                            <label class = "bt">
+                            <input  type="checkbox" name="Interesse" value="sites">Astronautica(foguetes,lançamentos,missões no espaço)
+                            </label>
+                            <br>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Mensagem:</legend>
+    
+                            <label  class="rotulocomum" for="assunto">Assunto:</label>
+                            <select class="campoform" name="assunto">
+    
+                                <option>Selecione um assunto</option>
+                                <option value="duvidas">Duvidas</option>
+                                <option value="criticas">Criticas</option>
+                                <option value="suguestoes">Sugestões</option>
+                                <option value="elogios">Elogios</option>
+                                <option value="outros">Outros</option>
+                            </select>
+    
+                            <br>
+                            <label  class="rotulocomum" for="mensagem">Mensagem:</label>
+                            <textarea  class="textform"name="mensagem"required placeholder="Digite sua Mensagem"></textarea>
+    
+                        </fieldset>
+                                      
+                                           
+                        <input class="formbotao"  type="submit" name="enviar" value="Enviar">
+                        
+                    </form>
+               </div> <!--final da div  do formulario - contato-->
+                    
+               <!--inicio da div  do iframe - locAlizacao-->
+               <div id="localizacao">
+                <h2>Localização</h2>
+                
+                <iframe class="mapa"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.992381739279!2d-47.64777588540479!3d-22.72852453724752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c631a09ac7b2e1%3A0x197834b105f878e3!2sSenac%20Piracicaba!5e0!3m2!1spt-BR!2sbr!4v1644018230125!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy"></iframe>
+    
+               </div>
+    
+               <div class="clearfix"></div>
+               
+            </section>
+           
+           
+        <footer class="rodape">
+
+            <div id="copy">
+                &copy;Copyright 2022 - Nerd Books Sciense News -Todos os direitos reservados.
+            </div>
+
+            <div id="creditos">
+                Site desenvolvido por : <a class="desenvolvedor"  href="#" target="_blank" title="Visite Nosso Site"> Danny Salles</a>
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+</html>

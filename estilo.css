@@ -1,0 +1,2506 @@
+@charset "UTF-8";
+@-ms-viewport
+{
+    width: device-width;
+}
+
+/*------------------------------------------body-----------------------------------------------------*/
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    color: black;
+    background-color: #7b6fa618;;
+    margin: 0px;
+    padding: 0px;
+}
+/*------------------------------------------img adequação----------------------------------------------------*/
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+/*div para limpar os bugs dos floats se necessario*/
+.clearfix
+{
+    clear: both;
+}
+/*classe da tag h1 e h3 usado em todas as paginas*/
+.titulo 
+{
+    text-align: center;
+    margin: 0px; /* zerando o h1*/
+}
+
+.titulodois
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+.titulogeral /*titulo da segunda seção da pagina livros*/
+{
+    margin-top: 90px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+/*logotipo classe imagem*/
+.logotipo
+{
+    width: 200px;
+    height: 80px;
+    text-align: center;
+}
+
+/* Breakpoints  -  BOOTSTRAP v5.0 */
+
+/*==========  Mobile First Method  ==========*/
+
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+    
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+    
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+    
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+    
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px)
+{  
+
+     /*-----------------------------------------tela principal---------------------------------------------*/
+     #principal
+     {
+         width: 576px;
+         height: auto ; /*auto*/
+         margin: 0 auto;
+         background-color: #7b6fa6c9;
+         /*padding: 0px;*/
+     }
+     
+    .titulo 
+    {
+        margin-top: 20px;
+    }
+
+     #conteudo
+     {
+         width: 556px;
+         min-height: 600px; /*estava em auto,  min-height: 1000px;*/
+         /*background-color: brown;*/
+         padding: 10px;
+     }
+     .conteudoum /*conteudo da pagina livros*/
+     {
+         width: 556px; /*1180px;*/
+         min-height: 800px;
+         padding: 10px;  
+         
+     }
+ 
+     .conteudolc
+     {
+         width: 556px;
+         height: auto;
+         padding: 10px;
+     }
+ 
+ 
+     #principalliv /*div do conteudo do livros*/
+     {
+         width: 556px;
+         min-height: 1000px;
+         
+     }
+ 
+     /*---------------------------------------topo do menu-------------------------------------------------*/
+     #topo
+     {
+         /* position: fixed;
+         top: 0px;
+         z-index: 99999; */
+         width: 576px;
+         height: 150px;
+         background-color:#433459b7; 
+     }
+     /*------------------------------------------logo-----------------------------------------------------*/
+     #logo
+     {   width: 100%;
+         height: 80px;
+         float: none;
+         text-align: center;
+         /* margin-top: -5px; */
+         margin-left: 0px;
+     }
+     
+     /*-----------------------------configurações menu --------------------------------------------------*/
+     #menu
+     {  display: none;
+         font-size: 17px;
+         width: 960px;
+         height: 80px;
+         float: right;
+         
+     }
+ 
+     #listamenu/*id da lista do menu*/
+     {
+         list-style: none;
+         margin: 0px;
+         padding: 0px;
+     
+     
+     }
+ 
+     a.linkmenu:link, a.linkmenu:visited
+     {
+         display: block;
+         width: 240px;
+         height: 80px;
+         float: left;
+         text-align: center;
+         line-height: 80px;
+         color: #C9CBBD;
+         font-weight: bold;
+         text-decoration: none;
+     
+     
+     }
+ 
+     a.linkmenu:hover, a.linkmenu:active
+     {
+         color: white;
+         font-weight: bold;
+         text-decoration: none;
+         border-radius: 7px;
+     
+     }
+
+     #menumobile
+    {
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+		height: 50px;
+	}
+
+    .campoform
+    {
+		width: 550px;
+		height: 30px;
+		margin: 0 0 5px 10px;
+		background: rgba(43, 7, 59, 0.301);
+		border: rgba(135,135,135,1.00) thin dashed;
+        text-align: center;
+        
+	}    
+ 
+     /*-----------------------------------------------------------------home, livros config-----------------------------------------------------------------------------------------*/
+ 
+     .flutuarimg /*imagens das escritas no home*/
+     {
+         float: left;
+         margin-left: 40px;
+         margin-right: 10px;
+     }
+ 
+ 
+     #textohome , #textohome1/*div principal com os artigos que são tres divs*/
+     {
+         width: 526px; /* 100%*/
+         min-height: 1300px;
+         /* min-height: 410px; */
+         margin-top: 10px;
+         padding-left: 30px;
+         /* background-color: blue; */
+     }
+     
+
+     
+ 
+
+ 
+     .artigohome /*classe do article na pagina home*/
+     {
+         width: 560px; /*antes 1160px*/
+         height: auto;
+         margin-left: 0px; 
+         /* background-color: aqua; */
+         
+     }
+ 
+     .destaquehome
+     {
+         display: block;
+         width: 310px;
+         min-height: 280px;
+         background-color: #4028370e; 
+         float: left;
+         margin-top: 30px;
+         border-radius: 10px;
+         margin-left: 50px;
+         padding: 10px;
+             
+     }
+ 
+     .destaquesgeral
+     {
+         display: block;
+         width: 260px;
+         min-height: 300px;
+         background-color: #4028370e; 
+         float: left;
+         margin-top: 30px;
+         border-radius: 10px;
+         
+     }
+ 
+     .margcie
+     {
+         margin-top: 10px;
+         margin-left: 100px;
+     }
+ 
+     .posicaoliv
+     {
+     margin-left: 10px;
+     }
+ 
+ 
+     .imghome
+     {
+         width: 200px;
+         padding-top: 20px;
+         padding-left: 20px;
+             
+     }
+ 
+     .imghomeprincipal
+     {
+         width: 210px;
+         padding-top: 20px;
+     padding-left: 40px;
+             
+     }
+ 
+ 
+     a.linkhome:link, a.linkhome:visited
+     {
+         color: black;
+         font-size: 20px;
+         display: block;
+         width: 250px;
+         height: 10px;
+         text-align: center;
+         text-decoration: none;
+     }
+ 
+     a.linkhomeprincipal:link, a.linkhomeprincipal:visited
+     {
+         color: black;
+         font-size: 20px;
+         display: block;
+         width: 300px;
+         height: 10px;
+         text-align: center;
+         text-decoration: none;
+     }
+ 
+     a.linkhomeprincipal:hover, a.linkhomeprincipal:active
+     {
+         color: white;
+         font-weight: bold;
+     }
+ 
+     a.linkhome:hover, a.linkhome:active
+     {
+         color: white;
+         font-weight: bold;
+     }
+ 
+ 
+     /*------------------------- configurações rodape-----------------------------------------------------*/
+ 
+     .rodape
+     {
+         width: 576px;
+         height: 80px;
+         background-color: #402837c2;
+         color: #C9CBBD;
+     }
+ 
+     #copy
+     {
+         width: 100%;
+         height: 20px;
+         float: none;
+         line-height: none;
+         padding: 10px;
+         
+     }
+ 
+     #creditos
+     {
+         width: 100%;
+         height: 20px;
+         float: none;
+         text-align: none;
+         line-height: none;
+         padding: 10px;
+     }
+ 
+     a.desenvolvedor:link, a.desenvolvedor:visited
+     {
+         text-decoration: none;
+         color: #C9CBBD;
+     }
+ 
+     a.desenvolvedor:hover, a.desenvolvedor:active
+     {
+         color: white;
+         font-weight: bold;
+     }
+     /*------------------------- configurações para  a pagina contato -------------------------*/
+ 
+     /*Formulario */
+     #contato
+     {
+         width: 550px;
+         height: auto;
+         float: left;
+         padding-left: 0px;
+     }
+ 
+     .rotulocomum
+     {
+         display: block;
+         width: 100px;
+         height: 30px;
+         line-height: 30px;
+         float: left;
+ 
+     }
+ 
+     .campoform
+     {
+         display: block;
+         width: 240px;
+         height: 30px;
+         border: none;
+         
+     }
+ 
+     .bt /*checkd e radios*/
+     {
+         display: block;
+         width: 450px;
+         height: 30px;
+         
+     }
+ 
+     .textform
+     {
+         width: 230px; 
+         height: 100px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 14px;
+         border: 0px;
+         padding-top: 10px;
+         resize: none;
+         color: black;
+     }
+ 
+     .formbotao /*BOTÃO ENVIAR*/
+     {
+         width: 100px;
+         height: 30px;
+         font-size: 18px;
+         background-color: #503c97;
+         border: 0;
+         border-radius: 5px;
+         margin: 10px 0px;
+             
+     }
+ 
+     .formbotao:hover /*BOTÃO ENVIAR - HOVER*/
+     {
+         width: 75px;
+         background-color: #503c97;
+         font-weight: bold;
+         font-size: 18px;
+     }
+ 
+     ::placeholder /*muda a cor das escritas das caixinhas que vem por padrao placeholder*/
+     {
+         color: black;
+     }
+     /*configuracao div com iframe*/
+     #localizacao
+     {
+         width: 560px;
+         height: auto;
+         float: right;
+         padding-right: 0px; 
+     }
+ 
+ 
+     .mapa /*iframe da pagina contato com o mapa*/
+     {
+         width: 520px;
+         height: 758px;
+         border: 0px;
+     }
+ 
+     /*-----------------------------configurações da pagina autocompadecida,outras leituras, quarto de despejo e brascubas--------------------------------*/
+ 
+     .imglivroscapa
+     {
+         margin-left: 300px;
+         
+     }
+ 
+     .compre /*classe para ajeitar o link do compre que vai para amazon*/
+     {
+         display: block;
+         background: #443659;
+         width: 300px;
+         height: 30px;
+         text-align: center;
+         line-height: 30px;
+         float: right;
+         margin-top: -200px;
+         margin-right: 260px;
+         border-radius: 10px;
+         
+             
+     }
+ 
+     a.compre:link, a.compre:visited /* configuracoes do botao compre que vai para amazon*/
+     {
+         color: white;
+         text-decoration: none;
+         font-weight: bold;
+     }
+ 
+     a.compre:hover, a.compre:active /* configuracoes do botao compre que vai para amazon*/
+     {
+         box-shadow: 5px 5px #32204e79;
+     }
+ 
+ 
+ 
+ 
+     /*------------------------- configurações usadas para todas as paginas -------------------------*/
+ 
+     /*alinhamento das imagens das paginas de ciencia e livros e dos video*/
+     .imgciencia, #videociencia, .imglivros , #videolivros
+     {
+         text-align: center;
+     }
+ 
+ 
+     /*classe de legenda de fotos da area da ciência e livros*/
+     .legciencia, .leglivros
+     {
+         margin: 10px 40px;
+         color: #313233;
+         font-weight: bold;
+         line-height: 20px;
+         text-align: justify;
+     }
+ 
+     .leglivros.video , .legciencia.video
+     {
+         margin-left: 100px;
+     }
+     .leglivros.teste , .legciencia.teste /*legenda das imagens*/
+     {
+         margin-left: 80px;
+     }
+ 
+     /*classe para destaque das palavras de significado home*/
+     .desquepalv
+     {
+         color: #131414;
+         font-weight: bold;
+     }
+ 
+ 
+     /*tags ps de paragrafos e de creditos*/
+     .paragrafocont, .fonte
+     {   
+         margin: 10px 40px;
+         color: #222626;
+         text-align: justify;
+         line-height: 20px;
+         font-weight: bold;
+     }
+ 
+ 
+ 
+     /*classe para links dos sites*/
+     a.hiperlink:link,a.hiperlink:visited
+     {
+         color: rgb(5, 5, 105);
+     }
+
+
+}
+
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) 
+{ 
+
+
+    
+     /*-----------------------------------------tela principal---------------------------------------------*/
+     #principal
+     {
+         width: 768px;
+         height: auto ; /*auto*/
+         margin: 0 auto;
+         background-color: #7b6fa6c9;
+         /*padding: 0px;*/
+     }
+     
+    .titulo 
+    {
+        margin-top: 20px;
+    }
+
+     #conteudo
+     {
+         width: 748px;
+         min-height: 600px; /*estava em auto,  min-height: 1000px;*/
+         /*background-color: brown;*/
+         padding: 10px;
+     }
+     .conteudoum /*conteudo da pagina livros*/
+     {
+         width: 748px; /*1180px;*/
+         min-height: 800px;
+         padding: 10px;  
+         
+     }
+ 
+     .conteudolc
+     {
+         width: 748px;
+         height: auto;
+         padding: 10px;
+     }
+ 
+ 
+     #principalliv /*div do conteudo do livros*/
+     {
+         width: 748px;
+         min-height: 1000px;
+         
+     }
+ 
+     /*---------------------------------------topo do menu-------------------------------------------------*/
+     #topo
+     {
+         /* position: fixed;
+         top: 0px;
+         z-index: 99999; */
+         width: 768px;
+         height: 150px;
+         background-color:#433459b7; 
+     }
+     /*------------------------------------------logo-----------------------------------------------------*/
+     #logo
+     {   width: 100%;
+         height: 80px;
+         float: none;
+         text-align: center;
+         /* margin-top: -5px; */
+         margin-left: 0px;
+     }
+     
+     /*-----------------------------configurações menu --------------------------------------------------*/
+     #menu
+     {  display: none;
+         font-size: 17px;
+         width: 960px;
+         height: 80px;
+         float: right;
+         
+     }
+ 
+     #listamenu/*id da lista do menu*/
+     {
+         list-style: none;
+         margin: 0px;
+         padding: 0px;
+     
+     
+     }
+ 
+     a.linkmenu:link, a.linkmenu:visited
+     {
+         display: block;
+         width: 240px;
+         height: 80px;
+         float: left;
+         text-align: center;
+         line-height: 80px;
+         color: #C9CBBD;
+         font-weight: bold;
+         text-decoration: none;
+     
+     
+     }
+ 
+     a.linkmenu:hover, a.linkmenu:active
+     {
+         color: white;
+         font-weight: bold;
+         text-decoration: none;
+         border-radius: 7px;
+     
+     }
+
+     #menumobile
+    {
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+		height: 50px;
+	}
+
+    .campoform
+    {
+		width: 550px;
+		height: 30px;
+		margin: 0 0 5px 10px;
+		background: rgba(43, 7, 59, 0.301);
+		border: rgba(135,135,135,1.00) thin dashed;
+        text-align: center;
+        
+	}    
+ 
+     /*-----------------------------------------------------------------home, livros config-----------------------------------------------------------------------------------------*/
+ 
+     .flutuarimg /*imagens das escritas no home*/
+     {
+         float: left;
+         margin-left: 40px;
+         margin-right: 10px;
+     }
+ 
+ 
+     #textohome , #textohome1/*div principal com os artigos que são tres divs*/
+     {
+         width: 526px; /* 100%*/
+         min-height: 1300px;
+         /* min-height: 410px; */
+         margin-top: 10px;
+         padding-left: 150px;
+         /* background-color: blue; */
+     }
+     
+ 
+ 
+
+ 
+     .artigohome /*classe do article na pagina home*/
+     {
+         width: 768px; /*antes 1160px*/
+         height: auto;
+         margin-left: 0px; 
+         /* background-color: aqua; */
+         
+     }
+ 
+     .destaquehome
+     {
+        display: block;
+        width: 280px;
+        min-height: 280px;
+        background-color: #4028370e; 
+        float: left;
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-left: 50px;
+        padding: 10px;
+            
+             
+     }
+ 
+     .destaquesgeral
+     {
+         display: block;
+         width: 260px;
+         min-height: 300px;
+         background-color: #4028370e; 
+         float: left;
+         margin-top: 30px;
+         border-radius: 10px;
+         
+     }
+ 
+     .margcie
+     {
+         margin-top: 10px;
+         margin-left: 100px;
+     }
+ 
+     .posicaoliv
+     {
+     margin-left: 10px;
+     }
+ 
+ 
+     .imghome
+     {
+         width: 200px;
+         padding-top: 20px;
+         padding-left: 20px;
+             
+     }
+ 
+     .imghomeprincipal
+     {
+         width: 210px;
+         padding-top: 20px;
+     padding-left: 40px;
+             
+     }
+ 
+ 
+     a.linkhome:link, a.linkhome:visited
+     {
+         color: black;
+         font-size: 20px;
+         display: block;
+         width: 250px;
+         height: 10px;
+         text-align: center;
+         text-decoration: none;
+     }
+ 
+     a.linkhomeprincipal:link, a.linkhomeprincipal:visited
+     {
+         color: black;
+         font-size: 20px;
+         display: block;
+         width: 300px;
+         height: 10px;
+         text-align: center;
+         text-decoration: none;
+     }
+ 
+     a.linkhomeprincipal:hover, a.linkhomeprincipal:active
+     {
+         color: white;
+         font-weight: bold;
+     }
+ 
+     a.linkhome:hover, a.linkhome:active
+     {
+         color: white;
+         font-weight: bold;
+     }
+ 
+ 
+     /*------------------------- configurações rodape-----------------------------------------------------*/
+ 
+     .rodape
+     {
+         width: 768px;
+         height: 80px;
+         background-color: #402837c2;
+         color: #C9CBBD;
+     }
+ 
+     #copy
+     {
+         width: 100%;
+         height: 20px;
+         float: none;
+         line-height: none;
+         padding: 10px;
+         
+     }
+ 
+     #creditos
+     {
+         width: 100%;
+         height: 20px;
+         float: none;
+         text-align: none;
+         line-height: none;
+         padding: 10px;
+     }
+ 
+     a.desenvolvedor:link, a.desenvolvedor:visited
+     {
+         text-decoration: none;
+         color: #C9CBBD;
+     }
+ 
+     a.desenvolvedor:hover, a.desenvolvedor:active
+     {
+         color: white;
+         font-weight: bold;
+     }
+     /*------------------------- configurações para  a pagina contato -------------------------*/
+ 
+     /*Formulario */
+     #contato
+     {
+         width: 748px;
+         height: auto;
+         float: left;
+         padding-left: 0px;
+     }
+ 
+     .rotulocomum
+     {
+         display: block;
+         width: 100px;
+         height: 30px;
+         line-height: 30px;
+         float: left;
+ 
+     }
+ 
+     .campoform
+     {
+         display: block;
+         width: 240px;
+         height: 30px;
+         border: none;
+         
+     }
+ 
+     .bt /*checkd e radios*/
+     {
+         display: block;
+         width: 450px;
+         height: 30px;
+         
+     }
+ 
+     .textform
+     {
+         width: 230px; 
+         height: 100px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 14px;
+         border: 0px;
+         padding-top: 10px;
+         resize: none;
+         color: black;
+     }
+ 
+     .formbotao /*BOTÃO ENVIAR*/
+     {
+         width: 100px;
+         height: 30px;
+         font-size: 18px;
+         background-color: #503c97;
+         border: 0;
+         border-radius: 5px;
+         margin: 10px 0px;
+             
+     }
+ 
+     .formbotao:hover /*BOTÃO ENVIAR - HOVER*/
+     {
+         width: 75px;
+         background-color: #503c97;
+         font-weight: bold;
+         font-size: 18px;
+     }
+ 
+     ::placeholder /*muda a cor das escritas das caixinhas que vem por padrao placeholder*/
+     {
+         color: black;
+     }
+     /*configuracao div com iframe*/
+     #localizacao
+     {
+         width: 748px;
+         height: auto;
+         float: right;
+         padding-right: 0px; 
+     }
+ 
+ 
+     .mapa /*iframe da pagina contato com o mapa*/
+     {
+         width: 748px;
+         height: 758px;
+         border: 0px;
+     }
+ 
+     /*-----------------------------configurações da pagina autocompadecida,outras leituras, quarto de despejo e brascubas--------------------------------*/
+ 
+     .imglivroscapa
+     {
+         margin-left: 400px;
+         
+     }
+ 
+     .compre /*classe para ajeitar o link do compre que vai para amazon*/
+     {
+         display: block;
+         background: #443659;
+         width: 300px;
+         height: 30px;
+         text-align: center;
+         line-height: 30px;
+         float: left;
+         margin-top: -200px;
+         margin-left: 80px;
+         border-radius: 10px;
+         
+             
+     }
+ 
+     a.compre:link, a.compre:visited /* configuracoes do botao compre que vai para amazon*/
+     {
+         color: white;
+         text-decoration: none;
+         font-weight: bold;
+     }
+ 
+     a.compre:hover, a.compre:active /* configuracoes do botao compre que vai para amazon*/
+     {
+         box-shadow: 5px 5px #32204e79;
+     }
+ 
+ 
+ 
+ 
+     /*------------------------- configurações usadas para todas as paginas -------------------------*/
+ 
+     /*alinhamento das imagens das paginas de ciencia e livros e dos video*/
+     .imgciencia, #videociencia, .imglivros , #videolivros
+     {
+         text-align: center;
+     }
+ 
+ 
+     /*classe de legenda de fotos da area da ciência e livros*/
+     .legciencia, .leglivros
+     {
+         margin: 10px 40px;
+         color: #313233;
+         font-weight: bold;
+         line-height: 20px;
+         text-align: justify;
+     }
+ 
+     .leglivros.video , .legciencia.video
+     {
+         margin-left: 100px;
+     }
+     .leglivros.teste , .legciencia.teste /*legenda das imagens*/
+     {
+         margin-left: 80px;
+     }
+ 
+     /*classe para destaque das palavras de significado home*/
+     .desquepalv
+     {
+         color: #131414;
+         font-weight: bold;
+     }
+ 
+ 
+     /*tags ps de paragrafos e de creditos*/
+     .paragrafocont, .fonte
+     {   
+         margin: 10px 40px;
+         color: #222626;
+         text-align: justify;
+         line-height: 20px;
+         font-weight: bold;
+     }
+ 
+ 
+ 
+     /*classe para links dos sites*/
+     a.hiperlink:link,a.hiperlink:visited
+     {
+         color: rgb(5, 5, 105);
+     }
+
+
+
+}
+
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px)
+
+{ 
+
+     /*-----------------------------------------tela principal---------------------------------------------*/
+     #principal
+     {
+         width: 992px;
+         height: auto ; /*auto*/
+         margin: 0 auto;
+         background-color: #7b6fa6c9;
+         /*padding: 0px;*/
+     }
+     
+     .titulo 
+    {
+        margin-top: 40px;
+    }
+
+
+     #conteudo
+     {
+         width: 992px;
+         min-height: 600px; /*estava em auto,  min-height: 1000px;*/
+         /*background-color: brown;*/
+         padding: 10px;
+     }
+     .conteudoum /*conteudo da pagina livros*/
+     {
+         width: 992px; /*1180px;*/
+         min-height: 800px;
+         padding: 10px;  
+         
+     }
+ 
+     .conteudolc
+     {
+         width: 992px;
+         height: auto;
+         padding: 10px;
+     }
+ 
+ 
+     #principalliv /*div do conteudo do livros*/
+     {
+         width: 992px;
+         min-height: 1000px;
+         
+     }
+ 
+     /*---------------------------------------topo do menu-------------------------------------------------*/
+     #topo
+     {
+         /* position: fixed;
+         top: 0px;
+         z-index: 99999; */
+         width: 992px;
+         height: 80px;
+         background-color:#433459b7; 
+     }
+     /*------------------------------------------logo-----------------------------------------------------*/
+     #logo
+     {   width: 200px;
+         height: 80px;
+         float: left;
+         text-align: center;
+         /* margin-top: -5px; */
+         margin-left: 0px;
+         
+     }
+     
+     /*-----------------------------configurações menu --------------------------------------------------*/
+     #menu
+     {  display: block;
+         font-size: 17px;
+         width: 792px;
+         height: 80px;
+         float: right;
+         
+     }
+ 
+     #listamenu/*id da lista do menu*/
+     {
+         list-style: none;
+         margin: 0px;
+         padding: 0px;
+     
+     
+     }
+ 
+     a.linkmenu:link, a.linkmenu:visited
+     {
+         display: block;
+         width: 198px;
+         height: 80px;
+         float: left;
+         text-align: center;
+         line-height: 80px;
+         color: #C9CBBD;
+         font-weight: bold;
+         text-decoration: none;
+     
+     
+     }
+ 
+     a.linkmenu:hover, a.linkmenu:active
+     {
+         color: white;
+         font-weight: bold;
+         text-decoration: none;
+         border-radius: 7px;
+     
+     }
+
+     #menumobile
+    {
+		display: none;
+		margin: 0 auto;
+		width: 90%;
+		height: 50px;
+	}
+
+    .campoform
+    {
+		width: 550px;
+		height: 30px;
+		margin: 0 0 5px 10px;
+		background: rgba(43, 7, 59, 0.301);
+		border: rgba(135,135,135,1.00) thin dashed;
+        text-align: none;
+	}    
+ 
+     /*-----------------------------------------------------------------home, livros config-----------------------------------------------------------------------------------------*/
+ 
+     .flutuarimg /*imagens das escritas no home*/
+     {
+         float: left;
+         margin-left: 40px;
+         margin-right: 10px;
+     }
+ 
+ 
+     #textohome /*div principal com os artigos que são tres divs*/
+     {
+         width: 992px; /* 100%*/
+         min-height: 800px;
+         /* min-height: 410px; */
+         margin-top: 10px;
+         padding-left: 30px;
+        /* background-color: blue; */
+     }
+     #textohome1 /*div principal com os artigos que são tres divs*/
+     {
+        width: 992px;  /* 100%*/
+         min-height: 500px;
+         /* min-height: 410px; */
+         margin-top: 10px;
+         padding-left: 30px; 
+         /* background-color: blue; */
+     }
+ 
+ 
+     .artigohome /*classe do article na pagina home*/
+     {
+         width: 960px; /*antes 1160px*/
+         height: auto;
+         margin-left: 10px; 
+         /* background-color: aqua; */
+         
+     }
+ 
+     .destaquehome
+     {
+         display: block;
+         width: 260px;
+         min-height: 280px;
+         background-color: #4028370e; 
+         float: left;
+         margin-top: 30px;
+         border-radius: 10px;
+         margin-left: 20px;
+         padding: 10px;
+             
+     }
+ 
+     .destaquesgeral
+     {
+         display: block;
+         width: 260px;
+         min-height: 300px;
+         background-color: #4028370e; 
+         float: left;
+         margin-top: 30px;
+         border-radius: 10px;
+         
+     }
+ 
+     .margcie
+     {
+         margin-top: 10px;
+         margin-left: 100px;
+     }
+ 
+     .posicaoliv
+     {
+     margin-left: 10px;
+     }
+ 
+ 
+     .imghome
+     {
+         width: 200px;
+         padding-top: 20px;
+         padding-left: 20px;
+             
+     }
+ 
+     .imghomeprincipal
+     {
+         width: 210px;
+         padding-top: 20px;
+     padding-left: 40px;
+             
+     }
+ 
+ 
+     a.linkhome:link, a.linkhome:visited
+     {
+         color: black;
+         font-size: 20px;
+         display: block;
+         width: 250px;
+         height: 10px;
+         text-align: center;
+         text-decoration: none;
+     }
+ 
+     a.linkhomeprincipal:link, a.linkhomeprincipal:visited
+     {
+         color: black;
+         font-size: 20px;
+         display: block;
+         width: 240px;
+         height: 10px;
+         text-align: center;
+         text-decoration: none;
+     }
+ 
+     a.linkhomeprincipal:hover, a.linkhomeprincipal:active
+     {
+         color: white;
+         font-weight: bold;
+     }
+ 
+     a.linkhome:hover, a.linkhome:active
+     {
+         color: white;
+         font-weight: bold;
+     }
+ 
+ 
+     /*------------------------- configurações rodape-----------------------------------------------------*/
+ 
+     .rodape
+     {
+         width: 992px;
+         height: 80px;
+         background-color: #402837c2;
+         color: #C9CBBD;
+     }
+ 
+     #copy
+     {
+         width: 100%;
+         height: 20px;
+         float: none;
+         line-height: none;
+         padding: 10px;
+         
+     }
+ 
+     #creditos
+     {
+         width: 100%;
+         height: 20px;
+         float: none;
+         text-align: none;
+         line-height: none;
+         padding: 10px;
+     }
+ 
+     a.desenvolvedor:link, a.desenvolvedor:visited
+     {
+         text-decoration: none;
+         color: #C9CBBD;
+     }
+ 
+     a.desenvolvedor:hover, a.desenvolvedor:active
+     {
+         color: white;
+         font-weight: bold;
+     }
+     /*------------------------- configurações para  a pagina contato -------------------------*/
+ 
+     /*Formulario */
+     #contato
+     {
+         width: 476px;
+         height: auto;
+         float: left;
+         padding-left: 0px;
+     }
+ 
+     .rotulocomum
+     {
+         display: block;
+         width: 100px;
+         height: 30px;
+         line-height: 30px;
+         float: left;
+ 
+     }
+ 
+     .campoform
+     {
+         display: block;
+         width: 240px;
+         height: 30px;
+         border: none;
+         
+     }
+ 
+     .bt /*checkd e radios*/
+     {
+         display: block;
+         width: 450px;
+         height: 30px;
+         
+     }
+ 
+     .textform
+     {
+         width: 230px; 
+         height: 100px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 14px;
+         border: 0px;
+         padding-top: 10px;
+         resize: none;
+         color: black;
+     }
+ 
+     .formbotao /*BOTÃO ENVIAR*/
+     {
+         width: 100px;
+         height: 30px;
+         font-size: 18px;
+         background-color: #503c97;
+         border: 0;
+         border-radius: 5px;
+         margin: 10px 0px;
+             
+     }
+ 
+     .formbotao:hover /*BOTÃO ENVIAR - HOVER*/
+     {
+         width: 75px;
+         background-color: #503c97;
+         font-weight: bold;
+         font-size: 18px;
+     }
+ 
+     ::placeholder /*muda a cor das escritas das caixinhas que vem por padrao placeholder*/
+     {
+         color: black;
+     }
+     /*configuracao div com iframe*/
+     #localizacao
+     {
+         width: 456px;
+         height: auto;
+         float: right;
+         padding-right: 30px; 
+     }
+ 
+ 
+     .mapa /*iframe da pagina contato com o mapa*/
+     {
+         width: 456px;
+         height: 758px;
+         border: 0px;
+     }
+ 
+     /*-----------------------------configurações da pagina autocompadecida,outras leituras, quarto de despejo e brascubas--------------------------------*/
+ 
+     .imglivroscapa
+     {
+         margin-left: 300px;
+         
+     }
+ 
+     .compre /*classe para ajeitar o link do compre que vai para amazon*/
+     {
+         display: block;
+         background: #443659;
+         width: 300px;
+         height: 30px;
+         text-align: center;
+         line-height: 30px;
+         float: right;
+         margin-top: -200px;
+         margin-right: 140px;
+         border-radius: 10px;
+         
+             
+     }
+ 
+     a.compre:link, a.compre:visited /* configuracoes do botao compre que vai para amazon*/
+     {
+         color: white;
+         text-decoration: none;
+         font-weight: bold;
+     }
+ 
+     a.compre:hover, a.compre:active /* configuracoes do botao compre que vai para amazon*/
+     {
+         box-shadow: 5px 5px #32204e79;
+     }
+ 
+ 
+ 
+ 
+     /*------------------------- configurações usadas para todas as paginas -------------------------*/
+ 
+     /*alinhamento das imagens das paginas de ciencia e livros e dos video*/
+     .imgciencia, #videociencia, .imglivros , #videolivros
+     {
+         text-align: center;
+     }
+ 
+ 
+     /*classe de legenda de fotos da area da ciência e livros*/
+     .legciencia, .leglivros
+     {
+         margin: 10px 40px;
+         color: #313233;
+         font-weight: bold;
+         line-height: 20px;
+         text-align: justify;
+     }
+ 
+     .leglivros.video , .legciencia.video
+     {
+         margin-left: 100px;
+     }
+     .leglivros.teste , .legciencia.teste /*legenda das imagens*/
+     {
+         margin-left: 80px;
+     }
+ 
+     /*classe para destaque das palavras de significado home*/
+     .desquepalv
+     {
+         color: #131414;
+         font-weight: bold;
+     }
+ 
+ 
+     /*tags ps de paragrafos e de creditos*/
+     .paragrafocont, .fonte
+     {   
+         margin: 10px 40px;
+         color: #222626;
+         text-align: justify;
+         line-height: 20px;
+         font-weight: bold;
+     }
+ 
+ 
+ 
+     /*classe para links dos sites*/
+     a.hiperlink:link,a.hiperlink:visited
+     {
+         color: rgb(5, 5, 105);
+     }
+
+ 
+}
+
+
+
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) 
+{ 
+
+    /*-----------------------------------------tela principal---------------------------------------------*/
+    #principal
+    {
+        width: 1200px;
+        height: auto ; /*auto*/
+        margin: 0 auto;
+        background-color: #7b6fa6c9;
+        /*padding: 0px;*/
+    }
+
+    .titulo 
+    {
+        margin-top: 90px;
+    }
+
+
+    #conteudo
+    {
+        width: 1180px;
+        min-height: 600px; /*estava em auto,  min-height: 1000px;*/
+        /*background-color: brown;*/
+        padding: 10px;
+    }
+    .conteudoum /*conteudo da pagina livros*/
+    {
+        width: 1180px; /*1180px;*/
+        min-height: 400px;
+        padding: 10px;  
+        
+    }
+
+    .conteudolc
+    {
+        width: 1180px;
+        height: auto;
+        padding: 10px;
+    }
+
+
+    #principalliv /*div do conteudo do livros*/
+    {
+        width: 1180px;
+        min-height: 1000px;
+        
+    }
+
+    /*---------------------------------------topo do menu-------------------------------------------------*/
+    #topo
+    {
+        position: fixed;
+        top: 0px;
+        z-index: 99999;
+        width: 1200px;
+        height: 80px;
+        background-color:#433459b7; 
+    }
+    /*------------------------------------------logo-----------------------------------------------------*/
+    #logo
+    {   width: 240px;
+        height: 80px;
+        float: left;
+        text-align: center;
+        /* margin-top: -5px; */
+        margin-left: 0px;
+    }
+    
+    /*-----------------------------configurações menu --------------------------------------------------*/
+    #menu
+    {
+        display: block;
+        font-size: 17px;
+        width: 960px;
+        height: 80px;
+        float: right;
+        
+    }
+
+    #listamenu/*id da lista do menu*/
+    {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    
+    
+    }
+
+    a.linkmenu:link, a.linkmenu:visited
+    {
+        display: block;
+        width: 240px;
+        height: 80px;
+        float: left;
+        text-align: center;
+        line-height: 80px;
+        color: #C9CBBD;
+        font-weight: bold;
+        text-decoration: none;
+    
+    
+    }
+
+    a.linkmenu:hover, a.linkmenu:active
+    {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 7px;
+    
+    }
+
+    #menumobile
+    {
+		display: none;
+		margin: 0 auto;
+		width: 90%;
+		height: 50px;
+	}
+
+    .campoform
+    {
+		width: 550px;
+		height: 30px;
+		margin: 0 0 5px 10px;
+		background: rgba(150,150,150,0.1);
+		border: rgba(135,135,135,1.00) thin dashed;
+	}    
+    /*-----------------------------------------------------------------home, livros config-----------------------------------------------------------------------------------------*/
+
+    .flutuarimg /*imagens das escritas no home*/
+    {
+        float: left;
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+
+
+    #textohome /*div principal com os artigos que são tres divs*/
+    {
+        width: 1300px;
+        min-height: 410px;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    #textohome1 /*div principal com os artigos que são tres divs*/
+    {
+        width: 1300px;
+        min-height: 410px;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    .artigohome /*classe do article na pagina home*/
+    {
+        width: 1160px;
+        height: auto;
+        margin-left: 30px; 
+        
+    }
+
+    .destaquehome
+    {
+        display: block;
+        width: 310px;
+        min-height: 280px;
+        background-color: #4028370e; 
+        float: left;
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-left: 50px;
+        padding: 10px;
+            
+    }
+
+    .destaquesgeral
+    {
+        display: block;
+        width: 260px;
+        min-height: 300px;
+        background-color: #4028370e; 
+        float: left;
+        margin-top: 30px;
+        border-radius: 10px;
+        
+    }
+
+    .margcie
+    {
+        margin-top: 90px;
+        margin-left: 30px;
+    }
+
+    .posicaoliv
+    {
+    margin-left: 30px;
+    }
+
+
+    .imghome
+    {
+        width: 200px;
+        padding-top: 20px;
+        padding-left: 20px;
+            
+    }
+
+    .imghomeprincipal
+    {
+        width: 210px;
+        padding-top: 20px;
+    padding-left: 40px;
+            
+    }
+
+
+    a.linkhome:link, a.linkhome:visited
+    {
+        color: black;
+        font-size: 20px;
+        display: block;
+        width: 250px;
+        height: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a.linkhomeprincipal:link, a.linkhomeprincipal:visited
+    {
+        color: black;
+        font-size: 20px;
+        display: block;
+        width: 300px;
+        height: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a.linkhomeprincipal:hover, a.linkhomeprincipal:active
+    {
+        color: white;
+        font-weight: bold;
+    }
+
+    a.linkhome:hover, a.linkhome:active
+    {
+        color: white;
+        font-weight: bold;
+    }
+
+
+    /*------------------------- configurações rodape-----------------------------------------------------*/
+
+    .rodape
+    {
+        width: 100%;
+        height: 50px;
+        background-color: #402837c2;
+        color: #C9CBBD;
+    }
+
+    #copy
+    {
+        width: 620px;
+        height: 30px;
+        float: left;
+        line-height: 30px;
+        padding: 10px;
+        
+    }
+
+    #creditos
+    {
+        width: 540px;
+        height: 30px;
+        float: right;
+        text-align: right;
+        line-height: 30px;
+        padding: 10px;
+    }
+
+    a.desenvolvedor:link, a.desenvolvedor:visited
+    {
+        text-decoration: none;
+        color: #C9CBBD;
+    }
+
+    a.desenvolvedor:hover, a.desenvolvedor:active
+    {
+        color: white;
+        font-weight: bold;
+    }
+    /*------------------------- configurações para  a pagina contato -------------------------*/
+
+    /*Formulario */
+    #contato
+    {
+        width: 560px;
+        height: auto;
+        float: left;
+        padding-left: 20px;
+    }
+
+    .rotulocomum
+    {
+        display: block;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+
+    }
+
+    .campoform
+    {
+        display: block;
+        width: 240px;
+        height: 30px;
+        border: none;
+        
+    }
+
+    .bt /*checkd e radios*/
+    {
+        display: block;
+        width: 450px;
+        height: 30px;
+        
+    }
+
+    .textform
+    {
+        width: 230px; 
+        height: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        border: 0px;
+        padding-top: 10px;
+        resize: none;
+        color: black;
+    }
+
+    .formbotao /*BOTÃO ENVIAR*/
+    {
+        width: 100px;
+        height: 30px;
+        font-size: 18px;
+        background-color: #503c97;
+        border: 0;
+        border-radius: 5px;
+        margin: 10px 0px;
+            
+    }
+
+    .formbotao:hover /*BOTÃO ENVIAR - HOVER*/
+    {
+        width: 75px;
+        background-color: #503c97;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    ::placeholder /*muda a cor das escritas das caixinhas que vem por padrao placeholder*/
+    {
+        color: black;
+    }
+    /*configuracao div com iframe*/
+    #localizacao
+    {
+        width: 560px;
+        height: auto;
+        float: right;
+        padding-right: 20px;
+    }
+
+
+    .mapa /*iframe da pagina contato com o mapa*/
+    {
+        width: 560px;
+        height: 758px;
+        border: 0px;
+    }
+
+    /*-----------------------------configurações da pagina autocompadecida,outras leituras, quarto de despejo e brascubas--------------------------------*/
+
+    .imglivroscapa
+    {
+        margin-left: 300px;
+        
+    }
+
+    .compre /*classe para ajeitar o link do compre que vai para amazon*/
+    {
+        display: block;
+        background: #443659;
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        float: right;
+        margin-top: -200px;
+        margin-right: 300px;
+        border-radius: 10px;
+        
+            
+    }
+
+    a.compre:link, a.compre:visited /* configuracoes do botao compre que vai para amazon*/
+    {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a.compre:hover, a.compre:active /* configuracoes do botao compre que vai para amazon*/
+    {
+        box-shadow: 5px 5px #32204e79;
+    }
+
+    /*------------------------- configurações usadas para todas as paginas -------------------------*/
+
+    /*alinhamento das imagens das paginas de ciencia e livros e dos video*/
+    .imgciencia, #videociencia, .imglivros , #videolivros
+    {
+        text-align: center;
+    }
+
+
+    /*classe de legenda de fotos da area da ciência e livros*/
+    .legciencia, .leglivros
+    {
+        margin: 10px 40px;
+        color: #313233;
+        font-weight: bold;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .leglivros.video , .legciencia.video
+    {
+        margin-left: 160px;
+    }
+    .leglivros.teste , .legciencia.teste
+    {
+        margin-left: 120px;
+    }
+
+    /*classe para destaque das palavras de significado*/
+    .desquepalv
+    {
+        color: #131414;
+        font-weight: bold;
+    }
+
+
+    /*tags ps de paragrafos e de creditos*/
+    .paragrafocont, .fonte
+    {   
+        margin: 10px 40px;
+        color: #222626;
+        text-align: justify;
+        line-height: 20px;
+        font-weight: bold;
+    }
+
+
+
+    /*classe para links dos sites*/
+    a.hiperlink:link,a.hiperlink:visited
+    {
+        color: rgb(5, 5, 105);
+    }
+
+}
+
+
+
+
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) 
+{
+    /*-----------------------------------------tela principal---------------------------------------------*/
+    #principal
+    {
+        width: 1400px;
+        height: auto ; /*auto*/
+        margin: 0 auto;
+        background-color: #7b6fa6c9;
+        /*padding: 0px;*/
+    }
+
+    .titulo 
+    {
+        margin-top: 90px;
+    }
+
+
+    #conteudo
+    {
+        width: 1380px;
+        min-height: 600px; /*estava em auto,  min-height: 1000px;*/
+        /*background-color: brown;*/
+        padding: 10px;
+    }
+    .conteudoum /*conteudo da pagina livros*/
+    {
+        width: 1380px; /*1180px;*/
+        min-height: 400px;
+        padding: 10px;  
+        
+    }
+
+    .conteudolc
+    {
+        width: 1380px;
+        height: auto;
+        padding: 10px;
+    }
+
+
+    #principalliv /*div do conteudo do livros*/
+    {
+        width: 1380px;
+        min-height: 1000px;
+        
+    }
+
+    /*---------------------------------------topo do menu-------------------------------------------------*/
+    #topo
+    {
+        position: fixed;
+        top: 0px;
+        z-index: 99999;
+        width: 1400px;
+        height: 80px;
+        background-color:#433459b7; 
+    }
+    /*------------------------------------------logo-----------------------------------------------------*/
+    #logo
+    {   width: 240px;
+        height: 80px;
+        float: left;
+        text-align: center;
+        /* margin-top: -5px; */
+        margin-left: 120px;
+    }
+    
+    /*-----------------------------configurações menu --------------------------------------------------*/
+    #menu
+    {
+        display: block;
+        font-size: 17px;
+        width: 960px;
+        height: 80px;
+        float: right;
+        
+    }
+
+    #listamenu/*id da lista do menu*/
+    {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    
+    
+    }
+
+    a.linkmenu:link, a.linkmenu:visited
+    {
+        display: block;
+        width: 240px;
+        height: 80px;
+        float: left;
+        text-align: center;
+        line-height: 80px;
+        color: #C9CBBD;
+        font-weight: bold;
+        text-decoration: none;
+    
+    
+    }
+
+    a.linkmenu:hover, a.linkmenu:active
+    {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 7px;
+    
+    }
+
+    #menumobile
+    {
+		display: none;
+		margin: 0 auto;
+		width: 90%;
+		height: 50px;
+	}
+
+    .campoform
+    {
+		width: 550px;
+		height: 30px;
+		margin: 0 0 5px 10px;
+		background: rgba(150,150,150,0.1);
+		border: rgba(135,135,135,1.00) thin dashed;
+	}    
+    /*-----------------------------------------------------------------home, livros config-----------------------------------------------------------------------------------------*/
+
+    .flutuarimg /*imagens das escritas no home*/
+    {
+        float: left;
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+
+
+    #textohome, #textohome1 /*div principal com os artigos que são tres divs*/
+    {
+        width: 1300px;
+        min-height: 410px;
+        margin-top: 10px;
+        padding-left: 100px;
+    }
+
+
+    .artigohome /*classe do article na pagina home*/
+    {
+        width: 1160px;
+        height: auto;
+        margin-left: 120px; 
+        
+    }
+
+    .destaquehome
+    {
+        display: block;
+        width: 310px;
+        min-height: 280px;
+        background-color: #4028370e; 
+        float: left;
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-left: 50px;
+        padding: 10px;
+            
+    }
+
+    .destaquesgeral
+    {
+        display: block;
+        width: 260px;
+        min-height: 300px;
+        background-color: #4028370e; 
+        float: left;
+        margin-top: 30px;
+        border-radius: 10px;
+        
+    }
+
+    .margcie
+    {
+        margin-top: 90px;
+        margin-left: 30px;
+    }
+
+    .posicaoliv
+    {
+    margin-left: 30px;
+    }
+
+
+    .imghome
+    {
+        width: 200px;
+        padding-top: 20px;
+        padding-left: 20px;
+            
+    }
+
+    .imghomeprincipal
+    {
+        width: 210px;
+        padding-top: 20px;
+    padding-left: 40px;
+            
+    }
+
+
+    a.linkhome:link, a.linkhome:visited
+    {
+        color: black;
+        font-size: 20px;
+        display: block;
+        width: 250px;
+        height: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a.linkhomeprincipal:link, a.linkhomeprincipal:visited
+    {
+        color: black;
+        font-size: 20px;
+        display: block;
+        width: 300px;
+        height: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a.linkhomeprincipal:hover, a.linkhomeprincipal:active
+    {
+        color: white;
+        font-weight: bold;
+    }
+
+    a.linkhome:hover, a.linkhome:active
+    {
+        color: white;
+        font-weight: bold;
+    }
+
+
+    /*------------------------- configurações rodape-----------------------------------------------------*/
+
+    .rodape
+    {
+        width: 100%;
+        height: 50px;
+        background-color: #402837c2;
+        color: #C9CBBD;
+    }
+
+    #copy
+    {
+        width: 620px;
+        height: 30px;
+        float: left;
+        line-height: 30px;
+        padding: 10px;
+        
+    }
+
+    #creditos
+    {
+        width: 540px;
+        height: 30px;
+        float: right;
+        text-align: right;
+        line-height: 30px;
+        padding: 10px;
+    }
+
+    a.desenvolvedor:link, a.desenvolvedor:visited
+    {
+        text-decoration: none;
+        color: #C9CBBD;
+    }
+
+    a.desenvolvedor:hover, a.desenvolvedor:active
+    {
+        color: white;
+        font-weight: bold;
+    }
+    /*------------------------- configurações para  a pagina contato -------------------------*/
+
+    /*Formulario */
+    #contato
+    {
+        width: 670px;
+        height: auto;
+        float: left;
+        padding-left: 20px;
+    }
+
+    .rotulocomum
+    {
+        display: block;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+
+    }
+
+    .campoform
+    {
+        display: block;
+        width: 240px;
+        height: 30px;
+        border: none;
+        
+    }
+
+    .bt /*checkd e radios*/
+    {
+        display: block;
+        width: 450px;
+        height: 30px;
+        
+    }
+
+    .textform
+    {
+        width: 230px; 
+        height: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        border: 0px;
+        padding-top: 10px;
+        resize: none;
+        color: black;
+    }
+
+    .formbotao /*BOTÃO ENVIAR*/
+    {
+        width: 100px;
+        height: 30px;
+        font-size: 18px;
+        background-color: #503c97;
+        border: 0;
+        border-radius: 5px;
+        margin: 10px 0px;
+            
+    }
+
+    .formbotao:hover /*BOTÃO ENVIAR - HOVER*/
+    {
+        width: 75px;
+        background-color: #503c97;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    ::placeholder /*muda a cor das escritas das caixinhas que vem por padrao placeholder*/
+    {
+        color: black;
+    }
+    /*configuracao div com iframe*/
+    #localizacao
+    {
+        width: 560px;
+        height: auto;
+        float: right;
+        padding-right: 100px;
+    }
+
+
+    .mapa /*iframe da pagina contato com o mapa*/
+    {
+        width: 650px;
+        height: 758px;
+        border: 0px;
+    }
+
+    /*-----------------------------configurações da pagina autocompadecida,outras leituras, quarto de despejo e brascubas--------------------------------*/
+
+    .imglivroscapa
+    {
+        margin-left: 300px;
+        
+    }
+
+    .compre /*classe para ajeitar o link do compre que vai para amazon*/
+    {
+        display: block;
+        background: #443659;
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        float: right;
+        margin-top: -200px;
+        margin-right: 300px;
+        border-radius: 10px;
+        
+            
+    }
+
+    a.compre:link, a.compre:visited /* configuracoes do botao compre que vai para amazon*/
+    {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a.compre:hover, a.compre:active /* configuracoes do botao compre que vai para amazon*/
+    {
+        box-shadow: 5px 5px #32204e79;
+    }
+
+
+
+
+    /*------------------------- configurações usadas para todas as paginas -------------------------*/
+
+    /*alinhamento das imagens das paginas de ciencia e livros e dos video*/
+    .imgciencia, #videociencia, .imglivros , #videolivros
+    {
+        text-align: center;
+    }
+
+
+    /*classe de legenda de fotos da area da ciência e livros*/
+    .legciencia, .leglivros
+    {
+        margin: 10px 40px;
+        color: #313233;
+        font-weight: bold;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .leglivros.video , .legciencia.video
+    {
+        margin-left: 160px;
+    }
+    .leglivros.teste , .legciencia.teste
+    {
+        margin-left: 120px;
+    }
+
+    /*classe para destaque das palavras de significado*/
+    .desquepalv
+    {
+        color: #131414;
+        font-weight: bold;
+    }
+
+
+    /*tags ps de paragrafos e de creditos*/
+    .paragrafocont, .fonte
+    {   
+        margin: 10px 40px;
+        color: #222626;
+        text-align: justify;
+        line-height: 20px;
+        font-weight: bold;
+    }
+
+
+
+    /*classe para links dos sites*/
+    a.hiperlink:link,a.hiperlink:visited
+    {
+        color: rgb(5, 5, 105);
+    }
+
+} 
+
+
+
+
