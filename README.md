@@ -1,4 +1,7 @@
-# Site NBSN (Nerd Books Science News)
+<h1 align="center">Site NBSN (Nerd Books Science News)</h1>
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=%20CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
 Um site feito como projeto final do meu curso de TI de uma das etapas de programação web . Não esta do jeito que entreguei pois tive que descaracterizar...
 
 Foi feito em cinco medidas de responsividade que são elas<br>
